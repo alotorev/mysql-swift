@@ -7,7 +7,7 @@ let package = Package(
         .library(name: "MySQL", targets: ["MySQL"])
     ],
     dependencies: [
-        .package(url: "https://github.com/alotorev/cmysql.git", .branch("master")),
+        //.package(url: "https://github.com/alotorev/cmysql.git", .branch("master")),
     ],
     targets: [
         .target(
@@ -16,7 +16,6 @@ let package = Package(
         .target(
             name: "MySQL",
             dependencies: [
-        	"CMySQL",
                 "SQLFormatter",
             ]
         ),
