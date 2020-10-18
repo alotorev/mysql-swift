@@ -16,6 +16,7 @@ let package = Package(
         .target(
             name: "MySQL",
             dependencies: [
+        	"CMySQL",
                 "SQLFormatter",
             ]
         ),
